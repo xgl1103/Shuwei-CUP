@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "agents": [
+    "claude-code"
+  ],
+  "skills": {
+    "research-writing-skill": {
+      "version": "1.0.0",
+      "sha": "8e03d52aa3bc33e069edccdeb90494d8d3fff13f526fac86619645b5a7486fb3",
+      "tier": "VERIFIED",
+      "installedAt": "2026-05-09T17:04:03.858Z",
+      "source": "github:norman-bury/research-writing-skill",
+      "scope": "project",
+      "files": [
+        "SKILL.md"
+      ],
+      "sourceRepoUrl": "https://github.com/norman-bury/research-writing-skill",
+      "sourceSkillPath": "SKILL.md"
+    }
+  },
+  "createdAt": "2026-05-09T17:04:03.857Z",
+  "updatedAt": "2026-05-09T17:04:03.858Z"
+}

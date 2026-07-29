@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>数维杯 B 题文档治理复核工作台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">B</div>
+          <div>
+            <h1>文档治理工作台</h1>
+            <p>识别 · 归类 · 复核 · 调度</p>
+          </div>
+        </div>
+        <nav class="nav" aria-label="主导航">
+          <button class="nav-item active" data-view="overview">总览</button>
+          <button class="nav-item" data-view="parse">解析监控</button>
+          <button class="nav-item" data-view="topics">主题发现</button>
+          <button class="nav-item" data-view="classification">分类结果</button>
+          <button class="nav-item" data-view="review">待复核队列</button>
+          <button class="nav-item" data-view="audit">人工核查</button>
+          <button class="nav-item" data-view="resources">资源场景</button>
+        </nav>
+        <div class="sidebar-foot">
+          <span id="loadState">正在加载数据...</span>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">智能办公场景 · 多源异构文件</div>
+            <h2 id="viewTitle">总览</h2>
+          </div>
+          <div class="top-actions">
+            <label class="search-box">
+              <span>搜索</span>
+              <input id="globalSearch" type="search" placeholder="doc_id / 标题 / 类别" />
+            </label>
+            <button id="refreshBtn" class="icon-btn" title="重新加载数据" type="button">刷新</button>
+            <button id="exportLogsBtn" class="icon-btn" title="导出复核日志" type="button">导出日志</button>
+          </div>
+        </header>
+
+        <section id="content" class="content" aria-live="polite"></section>
+      </main>
+
+      <aside id="drawer" class="drawer" aria-hidden="true">
+        <div class="drawer-head">
+          <div>
+            <p class="eyebrow">文档详情</p>
+            <h3 id="drawerTitle">未选择文档</h3>
+          </div>
+          <button id="closeDrawerBtn" class="close-btn" type="button" aria-label="关闭详情">×</button>
+        </div>
+        <div id="drawerBody" class="drawer-body"></div>
+      </aside>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+name: shuweibei
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - openpyxl
+  - pillow
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - tqdm
+  - pip:
+      - pypdf
+      - python-docx
+      - jieba
+      - rapidocr_onnxruntime
+      - pymupdf
