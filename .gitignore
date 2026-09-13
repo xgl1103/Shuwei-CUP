@@ -9,6 +9,12 @@ b_solution/outputs/
 *.pdf
 ~$*
 
+# 赛题资料与论文按要求纳入版本库（放行，优先级高于上面的通配规则）
+!赛题资料/
+!赛题资料/**
+!论文/
+!论文/**
+
 # Browser profiles, runtime logs, and caches
 b_solution/dashboard/chrome-profile*/
 b_solution/dashboard/edge-profile/
